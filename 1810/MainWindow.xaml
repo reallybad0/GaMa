@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1810"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Shit Window" Height="350" Width="525"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
     <Grid>
-        
+
+        <Button Name="opt1" Content="" HorizontalAlignment="Left" Margin="56,213,0,0" VerticalAlignment="Top" Width="113" Height="38" Click="Button_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.305"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ListBox Name="PersonsListView" HorizontalAlignment="Left" Height="42" Margin="115,268,0,0" VerticalAlignment="Top" Width="222" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-1.883"/>
+                    <RotateTransform Angle="1.342"/>
+                    <TranslateTransform X="1.365" Y="-2.955"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Label Name ="question" FontSize="50px" HorizontalAlignment="Left" Height="77" Margin="95,30,0,0" VerticalAlignment="Top" Width="326"/>
+        <Button Name ="opt3"  HorizontalAlignment="Left" Margin="350,213,0,0" VerticalAlignment="Top" Width="116" Height="38" Click="opt3_Click"/>
+        <Button Name="Generate" Content="Generuj nový příklad" HorizontalAlignment="Left" Margin="174,163,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click_1"/>
+        <ProgressBar Name="progbar" HorizontalAlignment="Left" Height="48" Margin="108,261,0,0" VerticalAlignment="Top" Width="264" Value="0"/>
+
     </Grid>
 </Window>
