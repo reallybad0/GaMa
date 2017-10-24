@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1810"
         mc:Ignorable="d"
-        Title="Shit Window" Height="350" Width="525"
+        Title="Shit Window" Height="612.667" Width="525"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
@@ -39,7 +39,10 @@
         <Label Name ="question" FontSize="50px" HorizontalAlignment="Left" Height="77" Margin="95,30,0,0" VerticalAlignment="Top" Width="326"/>
         <Button Name ="opt3"  HorizontalAlignment="Left" Margin="350,213,0,0" VerticalAlignment="Top" Width="116" Height="38" Click="opt3_Click"/>
         <Button Name="Generate" Content="Generuj nový příklad" HorizontalAlignment="Left" Margin="174,163,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click_1"/>
-        <ProgressBar Name="progbar" HorizontalAlignment="Left" Height="48" Margin="108,261,0,0" VerticalAlignment="Top" Width="264" Value="0"/>
+        <ProgressBar Name="progbar" HorizontalAlignment="Left" Height="26" Margin="126,273,0,0" VerticalAlignment="Top" Width="261" Value="0"/>
+        <Label Name="skoore"  HorizontalAlignment="Left" Height="38" Margin="409,261,0,0" VerticalAlignment="Top" Width="89"/>
+        <Button Content="Nejvyšší skóre&#xD;&#xA;" HorizontalAlignment="Left" Margin="174,329,0,0" VerticalAlignment="Top" Width="176" Click="Button_Click_2" Height="30" />
+        <ListBox Name="datazcsv" HorizontalAlignment="Left" Height="172" Margin="84,378,0,0" VerticalAlignment="Top" Width="303"/>
 
     </Grid>
 </Window>
